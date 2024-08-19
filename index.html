@@ -8,16 +8,14 @@
 
 <body>
 
-    <iframe src="inner.html" sandbox="allow-scripts allow-same-origin"></iframe>
-    
-    <div style="position:relative; width:100%; height:100%;">
-    <iframe src='https://embedstreams.me/epl/mutv-manchester-united-tv-mufc-tv-stream-1'' 
-            width='100%' height='100%' scrolling='no' frameborder='0' allowfullscreen allowtransparency>
-    </iframe>
-    <div style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:10;"></div>
-</div>
+    <!-- outer.html -->
+<iframe src="inner.html" sandbox="allow-scripts allow-same-origin"></iframe>
 
-    <script src="script.js"></script>
+<!-- inner.html -->
+<iframe src='https://embedstreams.me/epl/mutv-manchester-united-tv-mufc-tv-stream-1' width='100%' height='100%'
+        scrolling='no' frameborder='0' allowfullscreen allowtransparency></iframe>
+
+
 
 
 </body>
